@@ -16,6 +16,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+.nb-gradle-properties
 
 # Eclipse
 .metadata
