@@ -1,3 +1,6 @@
+# Project specific ignores
+*.out
+
 # Generic Java ignores
 *.class
 *.jar
