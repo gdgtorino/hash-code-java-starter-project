@@ -21,46 +21,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package it.gdgtorino.hashcode.io;
+package it.gdgtorino.hashcode.utils;
 
 /**
- * Wrapper class for output data.
- * Just substitute the local variable with the real ones.
+ * Constants holder class; this class is used to hold constant strings and values, in order to make
+ * them available from a unique place.
  *
  * @author Marco Terrinoni <marco.terrinoni@gmail.com>
  */
-public class OutputData {
-
-    private int firstValue;
-    private int secondValue;
-
-    public OutputData () {
-    }
-
-    public OutputData (int firstValue, int secondValue) {
-        this.firstValue = firstValue;
-        this.secondValue = secondValue;
-    }
-
-    public int getFirstValue () {
-        return firstValue;
-    }
-
-    public void setFirstValue (int firstValue) {
-        this.firstValue = firstValue;
-    }
-
-    public int getSecondValue () {
-        return secondValue;
-    }
-
-    public void setSecondValue (int secondValue) {
-        this.secondValue = secondValue;
-    }
-
-    @Override
-    public String toString () {
-        return "OutputData{" + "firstValue=" + firstValue + ", secondValue=" + secondValue + '}';
-    }
-
+public final class Constants {
+    // File paths
+    public static final String INPUT_FILENAME = "input/example.in";
+    public static final String OUTPUT_FILENAME = "example.out";
+    
+    // Error messages
+    public static final String MSG_ERR_FIND_INPUT_FILE = "Unable to find the input file";
+    public static final String MSG_ERR_CREATE_OUTPUT_FILE = "Unable to create the output file";
+    public static final String MSG_ERR_FIND_OUTPUT_FILE = "Unable to find the output file";
 }

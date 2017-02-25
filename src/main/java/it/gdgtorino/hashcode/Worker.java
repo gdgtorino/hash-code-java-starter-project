@@ -23,25 +23,71 @@
  */
 package it.gdgtorino.hashcode;
 
+import it.gdgtorino.hashcode.io.InputData;
+import it.gdgtorino.hashcode.io.OutputData;
+import it.gdgtorino.hashcode.utils.Utility;
+
+import static it.gdgtorino.hashcode.utils.Constants.INPUT_FILENAME;
+
 /**
+ * The Worker class contains the implementation of the real algorithm; all the "magic" happens here.
+ * Please note that this is a Singleton class and indeed the inner class WorkerHolder actually holds
+ * the instance of Worker, which is basically the only one available in the source code.
  *
  * @author Marco Terrinoni <marco.terrinoni@gmail.com>
  */
 public class Worker {
 
+    private InputData inputData; // this will hold the input data
+    private OutputData outputData; // this will hold the output data
+    private final Utility utils;
+
+    /**
+     * Private constructor; it's not available outside this class.
+     */
     private Worker () {
+        utils = Utility.getInstance();
     }
 
+    /**
+     * The method return the same Worker instance all the time.
+     *
+     * @return Worker
+     */
     public static Worker getInstance () {
         return WorkerHolder.INSTANCE;
     }
 
+    /**
+     * This inner class contains the unique Worker class instance.
+     */
     private static class WorkerHolder {
 
         private static final Worker INSTANCE = new Worker();
     }
 
+    /**
+     * Main method for Worker class; it executes the real algorithm.
+     * The structure of this method consists in:
+     * 1. initial input acquisition phase;
+     * 2. intermediate elaboration;
+     * 3. output generation phase.
+     */
     public void execute () {
-        System.out.println("Hello there");
+        System.out.println("Main execution starts for " + INPUT_FILENAME + " file");
+
+        // Initial input acquisition
+        inputData = utils.read();
+
+        // Intermediate elaboration
+        outputData = new OutputData();
+        outputData.setFirstValue(inputData.getFirstValue() + inputData.getSecondValue());
+        outputData.setSecondValue(inputData.getThirdValue() - inputData.getFourthValue());
+        System.out.println("Output data created: " + outputData.toString());
+
+        // Final output generation
+        utils.write(outputData);
+
+        System.out.println("Main execution correctly completed");
     }
 }

@@ -24,6 +24,7 @@
 package it.gdgtorino.hashcode.model;
 
 /**
+ * This is just a place-holder model class.
  *
  * @author Marco Terrinoni <marco.terrinoni@gmail.com>
  */
