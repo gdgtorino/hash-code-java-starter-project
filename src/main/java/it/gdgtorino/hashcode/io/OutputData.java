@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Google Developer Group Torino.
+ * Copyright 2019 Google Developer Group Torino.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package it.gdgtorino.hashcode.io;
 
 /**
@@ -31,36 +32,36 @@ package it.gdgtorino.hashcode.io;
  */
 public class OutputData {
 
-    private int firstValue;
-    private int secondValue;
+  private int firstValue;
+  private int secondValue;
 
-    public OutputData () {
-    }
+  public OutputData() {
+  }
 
-    public OutputData (int firstValue, int secondValue) {
-        this.firstValue = firstValue;
-        this.secondValue = secondValue;
-    }
+  public OutputData(int firstValue, int secondValue) {
+    this.firstValue = firstValue;
+    this.secondValue = secondValue;
+  }
 
-    public int getFirstValue () {
-        return firstValue;
-    }
+  public int getFirstValue() {
+    return firstValue;
+  }
 
-    public void setFirstValue (int firstValue) {
-        this.firstValue = firstValue;
-    }
+  public void setFirstValue(int firstValue) {
+    this.firstValue = firstValue;
+  }
 
-    public int getSecondValue () {
-        return secondValue;
-    }
+  public int getSecondValue() {
+    return secondValue;
+  }
 
-    public void setSecondValue (int secondValue) {
-        this.secondValue = secondValue;
-    }
+  public void setSecondValue(int secondValue) {
+    this.secondValue = secondValue;
+  }
 
-    @Override
-    public String toString () {
-        return "OutputData{" + "firstValue=" + firstValue + ", secondValue=" + secondValue + '}';
-    }
+  @Override
+  public String toString() {
+    return "OutputData{" + "firstValue=" + firstValue + ", secondValue=" + secondValue + '}';
+  }
 
 }

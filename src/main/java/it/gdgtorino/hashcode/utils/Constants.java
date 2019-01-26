@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Google Developer Group Torino.
+ * Copyright 2019 Google Developer Group Torino.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package it.gdgtorino.hashcode.utils;
 
 /**
@@ -30,12 +31,13 @@ package it.gdgtorino.hashcode.utils;
  * @author Marco Terrinoni <marco.terrinoni@gmail.com>
  */
 public final class Constants {
-    // File paths
-    public static final String INPUT_FILENAME = "input/example.in";
-    public static final String OUTPUT_FILENAME = "example.out";
-    
-    // Error messages
-    public static final String MSG_ERR_FIND_INPUT_FILE = "Unable to find the input file";
-    public static final String MSG_ERR_CREATE_OUTPUT_FILE = "Unable to create the output file";
-    public static final String MSG_ERR_FIND_OUTPUT_FILE = "Unable to find the output file";
+
+  // File paths
+  public static final String INPUT_FILENAME = "input/example.in";
+  public static final String OUTPUT_FILENAME = "example.out";
+
+  // Error messages
+  public static final String MSG_ERR_FIND_INPUT_FILE = "Unable to find the input file";
+  public static final String MSG_ERR_CREATE_OUTPUT_FILE = "Unable to create the output file";
+  public static final String MSG_ERR_FIND_OUTPUT_FILE = "Unable to find the output file";
 }

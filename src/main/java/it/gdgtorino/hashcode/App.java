@@ -1,9 +1,7 @@
-package it.gdgtorino.hashcode;
-
 /*
  * The MIT License
  *
- * Copyright 2017 Google Developer Group Torino.
+ * Copyright 2019 Google Developer Group Torino.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,6 +21,9 @@ package it.gdgtorino.hashcode;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+package it.gdgtorino.hashcode;
+
 /**
  * Main application class; it contains the main method that calls "execute" from Worker class, the
  * one that executes the real algorithm.
@@ -31,8 +32,8 @@ package it.gdgtorino.hashcode;
  */
 public class App {
 
-    public static void main (String[] args) {
-        Worker worker = Worker.getInstance(); // the worker class executes the real algorithm
-        worker.execute();
-    }
+  public static void main(String[] args) {
+    Worker worker = Worker.getInstance(); // the worker class executes the real algorithm
+    worker.execute();
+  }
 }

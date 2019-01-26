@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Google Developer Group Torino.
+ * Copyright 2019 Google Developer Group Torino.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package it.gdgtorino.hashcode.io;
 
 /**
@@ -31,71 +32,71 @@ package it.gdgtorino.hashcode.io;
  */
 public class InputData {
 
-    // First line values
-    private int firstValue;
-    private int secondValue;
-    private int thirdValue;
-    private int fourthValue;
+  // First line values
+  private int firstValue;
+  private int secondValue;
+  private int thirdValue;
+  private int fourthValue;
 
-    // Following lines data
-    private Object data; // this is just a placeholder for the real data-structure
+  // Following lines data
+  private Object data; // this is just a placeholder for the real data-structure
 
-    public InputData () {
-    }
+  public InputData() {
+  }
 
-    public InputData (int firstValue, int secondValue, int thirdValue, int fourthValue, Object data) {
-        this.firstValue = firstValue;
-        this.secondValue = secondValue;
-        this.thirdValue = thirdValue;
-        this.fourthValue = fourthValue;
-        this.data = data;
-    }
+  public InputData(int firstValue, int secondValue, int thirdValue, int fourthValue, Object data) {
+    this.firstValue = firstValue;
+    this.secondValue = secondValue;
+    this.thirdValue = thirdValue;
+    this.fourthValue = fourthValue;
+    this.data = data;
+  }
 
-    public int getFirstValue () {
-        return firstValue;
-    }
+  public int getFirstValue() {
+    return firstValue;
+  }
 
-    public void setFirstValue (int firstValue) {
-        this.firstValue = firstValue;
-    }
+  public void setFirstValue(int firstValue) {
+    this.firstValue = firstValue;
+  }
 
-    public int getSecondValue () {
-        return secondValue;
-    }
+  public int getSecondValue() {
+    return secondValue;
+  }
 
-    public void setSecondValue (int secondValue) {
-        this.secondValue = secondValue;
-    }
+  public void setSecondValue(int secondValue) {
+    this.secondValue = secondValue;
+  }
 
-    public int getThirdValue () {
-        return thirdValue;
-    }
+  public int getThirdValue() {
+    return thirdValue;
+  }
 
-    public void setThirdValue (int thirdValue) {
-        this.thirdValue = thirdValue;
-    }
+  public void setThirdValue(int thirdValue) {
+    this.thirdValue = thirdValue;
+  }
 
-    public int getFourthValue () {
-        return fourthValue;
-    }
+  public int getFourthValue() {
+    return fourthValue;
+  }
 
-    public void setFourthValue (int fourthValue) {
-        this.fourthValue = fourthValue;
-    }
+  public void setFourthValue(int fourthValue) {
+    this.fourthValue = fourthValue;
+  }
 
-    public Object getData () {
-        return data;
-    }
+  public Object getData() {
+    return data;
+  }
 
-    public void setData (Object data) {
-        this.data = data;
-    }
+  public void setData(Object data) {
+    this.data = data;
+  }
 
-    @Override
-    public String toString () {
-        return "InputData{" + "firstValue=" + firstValue + ", secondValue=" + secondValue
-                + ", thirdValue=" + thirdValue + ", fourthValue=" + fourthValue + ", data=" + data
-                + '}';
-    }
+  @Override
+  public String toString() {
+    return "InputData{" + "firstValue=" + firstValue + ", secondValue=" + secondValue
+        + ", thirdValue=" + thirdValue + ", fourthValue=" + fourthValue + ", data=" + data
+        + '}';
+  }
 
 }
