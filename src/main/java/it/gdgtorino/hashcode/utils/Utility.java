@@ -29,6 +29,7 @@ import it.gdgtorino.hashcode.io.OutputData;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.Reader;
 import java.util.Objects;
@@ -85,11 +86,9 @@ public class Utility {
     // Input acquisition phase starts here
     ClassLoader classLoader =
         getClass().getClassLoader(); // classloader useful to localize the file
-    File file = new File(
-        Objects.requireNonNull(classLoader.getResource(INPUT_FILENAME)).getFile()); // file loading
+    InputStream inputStream = classLoader.getResourceAsStream(INPUT_FILENAME); // file loading
     try (
-        Reader r = new FileReader(file);
-        Scanner s = new Scanner(r)
+        Scanner s = new Scanner(Objects.requireNonNull(inputStream))
     ) {
       // First line acquisition
       inputData.setFirstValue(s.nextInt());
@@ -101,7 +100,7 @@ public class Utility {
       /*
        * TODO: in this section the remaining lines of the input file are read
        */
-    } catch (IOException ex) {
+    } catch (Exception ex) {
       System.err.println(MSG_ERR_FIND_INPUT_FILE);
       throw new RuntimeException(MSG_ERR_FIND_INPUT_FILE, ex);
     }
