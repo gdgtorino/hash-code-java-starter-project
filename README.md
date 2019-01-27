@@ -1,5 +1,5 @@
-# Hash Code Starter Project
-## Google Developer Group Torino
+# Hash Code Java Starter Project
+## GDG Torino
 ##### Author: [Marco Terrinoni](https://twitter.com/TerrinoniMarco)
 
 This is a Java starter project that can be cloned for Hash Code challenge, in order to have a ready-to-use Java project.
